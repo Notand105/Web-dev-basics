@@ -1,0 +1,33 @@
+:root{
+  --text-color: rgb(0,255,19)
+}
+
+article{
+  display: flex;
+  gap: 10px;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+/* img{
+
+  width: calc(100vw - 10px);
+  aspect-ratio: 16/10;
+  padding: calc(5% + 2px);
+
+} */
+p{
+  color: var(--text-color);
+  font-size: calc(1rem * 1.5);
+}
+
+.drop{
+  animation : dropIn 1s ease forwards;
+  /* we delay the animation based on the variable set in the html */
+  animation-delay: calc(var(--order) * 100ms);
+}
+
+@keyframes dropIn {
+  from {transform: translateY(-500px);} 
+  to {transform: translateY(0px);}
+}

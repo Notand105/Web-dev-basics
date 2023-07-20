@@ -1,0 +1,13 @@
+:root{
+  --text-color: rgb(255,255,19)
+}
+
+img{
+
+  width: 100%;
+  aspect-ratio: 16/10;
+
+}
+p{
+  color: var(--text-color);
+}

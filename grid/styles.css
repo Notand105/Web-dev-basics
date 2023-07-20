@@ -1,0 +1,12 @@
+.grid {
+  color: white;
+  display: grid;
+  /* significa que el grid tiene 3 columnas, con 1fr 2fr y 1fr de tamaño respectivamente */
+  /* fr genera fracciones responsivas dependiendo de el espacio que quede disponible     */
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px 200px;
+}
+li {
+  background-color: purple;
+  border: 2px solid white;
+}

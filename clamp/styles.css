@@ -1,0 +1,19 @@
+article{
+  background-color: red;
+/* clamp(min, preferred, max)  */
+  width: clamp(200px, 50%,600px); 
+  height: 50px;
+}
+
+/*
+  Media queries version
+@media only screen and (max-width:600px){
+  article{
+    width: 200px;
+  }
+}
+@media only screen and (min-width:1200px){
+  article{
+    width: 800px;
+  }
+} */
