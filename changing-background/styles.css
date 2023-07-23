@@ -1,0 +1,56 @@
+:root{
+    --purple : purple;
+    --orange : orange;
+}
+body{
+    background-color: black;
+    margin: 0;
+}
+
+.side {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: absolute;
+}
+.side .title{
+
+    color:white;
+    font-family: "Rubik", sans-serif;
+    font-size: 8vw;
+    margin: 0px 15vw;
+    width: 70vw;
+}
+
+.side .fancy{
+    font-family: "Lobster", cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+}
+#leftside{
+    background-color: var(--purple);
+    z-index: 2;
+    width: 60%;
+}
+#leftside .title{
+    color:white
+}
+#leftside .fancy{
+    color: var(--orange);
+}
+
+
+#rightside{
+    background-color: var(--orange);
+}
+
+#rightside .title{
+    color: black;
+}
+
+#rightside .fancy{
+    color: var(--purple);
+}
+
