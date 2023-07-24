@@ -79,6 +79,7 @@
 
 .list li a:hover .fa{
     color:#ffffff;
+    transform: scale(1.5) translateZ(40px);
 }
 
 

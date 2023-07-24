@@ -39,7 +39,16 @@
         </li>
       </ul>
     </section>
+    <script src="tilt.js" ></script>
     <script>
+
+        VanillaTilt.init(document.querySelectorAll(".list li a"), {
+		max: 25,
+		speed: 400,
+        glare:true,
+        "max-glare": 1,
+
+	    });
         let list = document.querySelectorAll(".list li")
         let bg = document.querySelector('.container')
         list.forEach((element)=>{
