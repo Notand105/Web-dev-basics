@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #121212;
+            color: white;
+        }
+        section{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .hidden{
+            opacity: 0;
+            transition: all 1.4s;
+            filter: blur(5px);
+            transform: translateX(-100%);
+        }
+        .show{
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0%);
+        }
+        
+        @media(prefers-reduced-motion){
+            .hidden{
+                transition: none;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+  <section class="hidden" >
+    <h1>Hi compadre</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum velit sapiente est recusandae vero ducimus officia illum autem! Magnam, sunt?</p>
+  </section>
+  <section class="hidden" >
+    <h1>Oh my good</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis repellat aliquid et aut architecto quidem hic eligendi at doloremque laboriosam omnis velit rem temporibus blanditiis nemo repudiandae neque ducimus tempora dolor quam eveniet, commodi nulla mollitia! In, soluta aut?</p>
+  </section>
+  <section class="hidden" >
+    <h1>lero lero</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ut non iure aspernatur quia est ab atque ipsa, optio laudantium blanditiis, rem cupiditate quae error corrupti ducimus voluptate officiis deserunt aliquam velit nihil neque illum numquam repellat! Molestiae voluptatum consectetur sint reprehenderit aliquam labore dolor ad facilis officiis hic nihil, quisquam possimus deserunt ipsam debitis sit error quasi illum non doloremque! Perferendis, ab a reiciendis aperiam itaque atque recusandae nemo modi nostrum, vel alias dolor laboriosam! Enim quasi cupiditate sint possimus odit cum recusandae, dolorum, ea tempore atque aliquam saepe! Aliquid dolores velit quos magnam quidem cupiditate, error labore ab.</p>
+  </section> 
+</body>
+<script>
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add('show')
+            }
+            /*
+            //if we want to make it appear again we remove the class
+            else{
+                entry.target.classList.remove('show')
+            }
+            or oneline toggle
+            entry.target.classList.toggle('show', entry.isIntersecting);            
+            */
+        })
+    })
+    const sections = document.querySelectorAll(".hidden")
+    sections.forEach((section)=>observer.observe(section))
+</script>
+</html>
