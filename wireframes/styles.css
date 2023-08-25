@@ -7,15 +7,16 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: whitesmoke;
     color: whitesmoke;
 }
 .above-the-fold{
     display: flex;
-    height: 85vh;
+    height: 70vh;
     gap: 4rem;
     justify-content: center;
     align-items: center;
+    background-color: gray;
 }
 .img{
     width: 40%;
@@ -38,7 +39,7 @@ body{
     font-size:1.3rem;
 }
 .cards{
-    background-color: #121212;
+    background-color: whitesmoke;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -77,7 +78,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #171717;
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -110,4 +111,66 @@ li{
 .logo{
     font-size: 10rem;
     letter-spacing: -32px;
+}
+.statistics{
+    width: 100%;
+    padding-top: 5rem ;
+    padding-bottom: 5rem ;
+    display: flex;
+    background:linear-gradient(40deg, purple, violet);
+    justify-content:space-around;
+    
+}
+.data{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.data h3{
+    font-size: 3rem;
+}
+.other{
+    background-color: whitesmoke;
+    height: 100vh;
+}
+nav{
+    background-color: white;
+    color: black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.icon{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 90%;
+    padding-right: 2rem;
+}
+.ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cta{
+    background-color: purple;
+    padding: .7rem;
+    color: white;
+    border-radius: 15px;
+    transition: all .2s ease;
+}
+.cta:hover{
+    text-decoration: none !important;
+    background-color: violet;
 }
