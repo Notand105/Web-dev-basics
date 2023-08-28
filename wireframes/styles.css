@@ -16,7 +16,7 @@ body{
     gap: 4rem;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: #242424;
 }
 .img{
     width: 40%;
@@ -39,7 +39,7 @@ body{
     font-size:1.3rem;
 }
 .cards{
-    background-color: whitesmoke;
+    background-color: #323232;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -174,4 +174,35 @@ nav{
 .cta:hover{
     text-decoration: none !important;
     background-color: violet;
+}
+.valuescontainer{
+    min-height: 90vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-color: #242424;
+}
+.values{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.values p{
+    max-width: 40ch;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: indigo;
+}
+.valtext{
+    display: flex;
+    gap: 2rem;    
 }
