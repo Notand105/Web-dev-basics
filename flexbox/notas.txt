@@ -1,0 +1,17 @@
+
+El flex container puede tener flex direction, gap, wrap, no wrap justify etc...
+
+Para los flex items está: 
+
+order:1; permite ordenenar los items, todos tienen por defecto 0, si se pone 1, 2, 3, n, cambia su prioridad
+de menor a mayor, -1 se muestra antes que el resto, opuesto a z-index
+
+flex-grow: 1; por defecto 0, permite repartir el espacio disponible en el eje que se este usando flex dependiendo del numero será la prioridad de cada elemento para usar el espacio
+
+flex-shrink: 2; por defecto 1, la prioridad de cada elemento para reducir su tamaño cuando falta espacio
+
+flex-basis: 150px; por defecto auto, define el tamaño base del elemento en el eje.
+
+flex: grow shrink basis ; simplemente las 3 anteriores unidas en un shortcut
+
+align-self:center; align items pero para un elemento individual
